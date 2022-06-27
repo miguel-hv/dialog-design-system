@@ -31,7 +31,6 @@ body {
   box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
   border-radius: 8px;
   box-sizing: border-box;
-  z-index: -1;
 }
 .title{
   font-family: 'Montserrat';
@@ -63,6 +62,8 @@ body {
   border-radius: 4px;
   border-style: solid;
   margin: 0 5px;
+  cursor: pointer;
+
 }
 .button--contained {
   color: var(--color-white);
@@ -74,26 +75,25 @@ body {
   border-color: var(--color-lilac);
 }
 .logo-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: var(--color-lilac);
+
+}
+.logo-close:after {
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.335004 10.0461C-0.111933 10.4931 -0.111932 11.2177 0.335004 11.6646C0.78194 12.1116 1.50657 12.1116 1.9535 11.6646L5.99984 7.6183L10.0463 11.6648C10.4933 12.1117 11.2179 12.1117 11.6648 11.6648C12.1118 11.2178 12.1118 10.4932 11.6648 10.0463L7.61834 5.9998L11.6645 1.95364C12.1114 1.5067 12.1114 0.782077 11.6645 0.335141C11.2176 -0.111795 10.4929 -0.111795 10.046 0.335141L5.99984 4.3813L1.95384 0.335295C1.5069 -0.111641 0.782272 -0.111641 0.335335 0.335295C-0.111601 0.782231 -0.111601 1.50686 0.335335 1.95379L4.38134 5.9998L0.335004 10.0461Z' fill='white'/%3E%3C/svg%3E ");
-  width: 24px;
-  height: 24px;
+  content: '';
+  display: block;
   background-repeat: no-repeat;
   background-position: center;
   width: 44px;
   height: 44px;
   position: absolute;
-  top: 12px;
-  right: 12px;
-}
-.logo-close:after {
-  content: '';
-  display: block;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background: var(--color-lilac);
-  position: absolute;
-  z-index: -1;  
+  cursor: pointer;
 }
 .logo-attention {
   background-image: url("data:image/svg+xml,%3Csvg width='7' height='36' viewBox='0 0 7 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.5 0.00012207C1.84315 0.00012207 0.5 1.34327 0.5 3.00012V25.0001C0.5 26.657 1.84315 28.0001 3.5 28.0001C5.15685 28.0001 6.5 26.657 6.5 25.0001V3.00012C6.5 1.34327 5.15685 0.00012207 3.5 0.00012207ZM3.5 36.0001C1.84315 36.0001 0.5 34.657 0.5 33.0001C0.5 31.3433 1.84315 30.0001 3.5 30.0001C5.15685 30.0001 6.5 31.3433 6.5 33.0001C6.5 34.657 5.15685 36.0001 3.5 36.0001Z' fill='%23FFD912'/%3E%3C/svg%3E%0A");
